@@ -1,0 +1,21 @@
+.logouts {
+  background-color: #8e8e8e;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: relative;
+  left: 38%;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.logouts:hover {
+  background-color: #6198de; /* Green */
+  color: white;
+}
