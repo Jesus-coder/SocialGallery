@@ -17,7 +17,7 @@
   <p id="mensaje" class="mensaje"></p>
   <div class="container">
     <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Usuario" name="username" id="username">
+    <input type="text" placeholder="Usuario" name="username" id="username" value="<?php if (isset($_REQUEST['us'])) { echo $_REQUEST['us'];} else { echo"";} ?>">
     <br>
     <p id="mensajenom" class="mensajenom"></p>
     <label for="psw"><b>Password</b></label>

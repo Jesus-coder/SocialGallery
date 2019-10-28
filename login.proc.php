@@ -6,10 +6,10 @@
    if($_SERVER["REQUEST_METHOD"] == "POST") {
       // username and password sent from form 
       
-      $myusername = $_POST['username'];
-      $mypassword = $_POST['password']; 
+      $myusername = $_REQUEST['username'];
+      $mypassword = $_REQUEST['password']; 
       $pass = md5($mypassword);
-	  if (isset( $_POST['username'])){
+	  if (isset( $_REQUEST['username'])){
 	  
       $sql = "SELECT id FROM users_db WHERE user = '$myusername' and password = '$pass'";
 	  
@@ -29,7 +29,7 @@
          header("location: home.php");
       }else {
         phpAlert(   'Usuario o contraseña incorrectos'   );
-         header('Refresh:0; url = index.php');
+         header('Refresh:0; url = index.php?us='.$myusername);
       }
 	  }
    }
