@@ -17,11 +17,11 @@
   <p id="mensaje" class="mensaje"></p>
   <div class="container">
     <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Usuario" name="username" id="username" value="<?php if (isset($_REQUEST['us'])) { echo $_REQUEST['us'];} else { echo"";} ?>">
+    <input type="text" placeholder="Usuario" name="username" pattern="[a-z]{1,15}" id="username" value="<?php if (isset($_REQUEST['us'])) { echo $_REQUEST['us'];} else { echo"";} ?>">
     <br>
     <p id="mensajenom" class="mensajenom"></p>
     <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Contraseña" name="password" id="password">
+    <input type="password" placeholder="Contraseña" name="password" pattern="[a-z]{1,15}" id="password">
     <br>
     <p id="mensajemail" class="mensajemail"></p>
 
